@@ -1,0 +1,398 @@
+{
+  "code": 0,
+  "description": "OK",
+  "response": {
+    "transactionData": {
+      "application": "SELAE_Android",
+      "fecha_creacion": "2022-04-22 10:55:46.261",
+      "doc_id": "12345678Z",
+      "nombre": "",
+      "apellido_1": "",
+      "email": "",
+      "telefono_movil": "",
+      "apellido_2": "",
+      "pais": ""
+    },
+    "resultData": {
+      "scoreFacialNfc": -1,
+      "scoreDocumental": 100,
+      "scoreValPersonalizadas": 100,
+      "scoreValCamposCriticos": 100,
+      "scoreDocumentalAvan": -1,
+      "scoreFacialAntispoofing": -1,
+      "scoreFacial": 81,
+      "scoreValTransaccion": 100
+    },
+    "scoring": "95",
+    "ocr": {
+      "document_number": "CBP132339",
+      "date_of_expiry": "31/01/2032",
+      "sex": "M",
+      "personal_number": "12345678Z",
+      "issuing_state": "Spain",
+      "surname_and_given_names": "GARXXX^ARXXXXX JXXX MXXXXX",
+      "nationality": "ESP",
+      "months_to_expire": "117",
+      "years_since_issue": "0",
+      "given_names": "JXXX MXXXXX",
+      "issuing_state_code": "ESP",
+      "second_surname": "ARXXXXX",
+      "date_of_birth": "09/10/1911",
+      "surname": "GARXXX",
+      "date_of_issue": "31/01/2022",
+      "age": "99",
+      "address": " AVDA. TAL 20 PUEBLO ALMERIA",
+      "parents_given_names": "JXXX MXXXXX / MXXX SXXXXXX",
+      "issuing_authority_code": "04451L6D1",
+      "place_of_birth_city": "PUEBLO^ALMERÍA"
+    },
+    "mrz": {
+      "document_number": "CBP132339",
+      "check_digit_of_birth_date": "3",
+      "date_of_expiry": "31/01/2032",
+      "optional_data": "12345678Z",
+      "sex": "M",
+      "personal_number": "12345678Z",
+      "issuing_state": "Spain",
+      "surname_and_given_names": "GARXXX ARXXXXX JXXX MXXXXX",
+      "nationality_code": "ESP",
+      "months_to_expire": "117",
+      "given_names": "JXXX MXXXXX",
+      "mrz_lines": "IDESPCBP123456789345678Z\u003c\u003c\u003c\u003c\u003c\u003c^8910093M3201314ESP\u003c\u003c\u003c\u003c\u003c\u003c\u003c\u003c\u003c\u003c\u003c7^GARXXX\u003cARXXXXX\u003c\u003cJOSE\u003cMANUEL\u003c\u003c\u003c",
+      "check_digit_of_document_number": "9",
+      "issuing_state_code": "ESP",
+      "document_class_code": "ID",
+      "check_digit_of_expiry_date": "4",
+      "date_of_birth": "09/10/1911",
+      "surname": "GARXXX ARXXXXX",
+      "mrz_type": "ID-1",
+      "final_check_digit": "7",
+      "age": "32"
+    },
+    "docVerification": {
+      "ocrData": {
+        "scoring": {
+          "score": 100,
+          "validez": "WARNING",
+          "numCamposNoLeidos": 0,
+          "calidadImagenFront": "OK (4 / 5)"
+        },
+        "mrz": "{\"Document #\":\"CBP132339\",\"Check digit of birth date\":\"3\",\"Date of expiry\":\"31/01/2032\",\"Optional data\":\"12345678Z\",\"Sex\":\"M\",\"Personal #\":\"12345678Z\",\"Issuing State\":\"Spain\",\"Surname And Given Names\":\"GARXXX ARXXXXX JXXX MXXXXX\",\"Nationality Code\":\"ESP\",\"Months to expire\":\"117\",\"Given names\":\"JXXX MXXXXX\",\"MRZ Lines\":\"IDESPCBP132339912345678Z\u003c\u003c\u003c\u003c\u003c\u003c^8910093M3201314ESP\u003c\u003c\u003c\u003c\u003c\u003c\u003c\u003c\u003c\u003c\u003c7^GARXXX\u003cARXXXXX\u003c\u003cJOSE\u003cMANUEL\u003c\u003c\u003c\",\"Check digit of document number\":\"9\",\"Issuing State Code\":\"ESP\",\"Document Class Code\":\"ID\",\"Check digit of expiry date\":\"4\",\"Date of birth\":\"09/10/1911\",\"Surname\":\"GARXXX ARXXXXX\",\"MRZ Type\":\"ID-1\",\"Final check digit\":\"7\",\"Age\":\"99\"}",
+        "ocr": "{\"Document #\":\"CBP132339\",\"Date of expiry\":\"31/01/2032\",\"Sex\":\"M\",\"Personal #\":\"12345678Z\",\"Issuing State\":\"Spain\",\"Surname And Given Names\":\"GARXXX^ARXXXXX JXXX MXXXXX\",\"Nationality\":\"ESP\",\"Months to expire\":\"117\",\"Years since issue\":\"0\",\"Given names\":\"JXXX MXXXXX\",\"Issuing State Code\":\"ESP\",\"Second surname\":\"ARXXXXX\",\"Date of birth\":\"09/10/1911\",\"Surname\":\"GARXXX\",\"Date of issue\":\"31/01/2022\",\"Age\":\"99\",\"Address\":\"AVDA. TAL 20^PUEBLO^ALMERÍA\",\"Parents\u0027 given names\":\"JXXX MXXXXX / MAXXX SOXXXXX\",\"Issuing Authority code\":\"04451L6D1\",\"Place Of Birth: City\":\"PUEBLO^ALMERÍA\"}",
+        "barcode": {},
+        "validaciones": [
+          {
+            "tipo": "MRZ",
+            "clave": "Validación del campo Document Class Code de MRZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "MRZ",
+            "clave": "Validación del campo Issuing State Code de MRZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "MRZ",
+            "clave": "Validación del campo Document # de MRZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "Logico",
+            "clave": "Validación del campo Document # de MRZ vs VIZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "MRZ",
+            "clave": "Validación del campo Date of expiry de MRZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "Logico",
+            "clave": "Validación del campo Date of expiry de VIZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "Logico",
+            "clave": "Validación del campo Date of expiry de MRZ vs VIZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "MRZ",
+            "clave": "Validación del campo Date of birth de MRZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "Logico",
+            "clave": "Validación del campo Date of birth de MRZ vs VIZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "Logico",
+            "clave": "Validación del campo Personal # de MRZ vs VIZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "Logico",
+            "clave": "Validación del campo Surname de MRZ vs VIZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "Logico",
+            "clave": "Validación del campo Given names de MRZ vs VIZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "MRZ",
+            "clave": "Validación del campo Sex de MRZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "Logico",
+            "clave": "Validación del campo Sex de MRZ vs VIZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "Logico",
+            "clave": "Validación del campo Surname And Given Names de MRZ vs VIZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "MRZ",
+            "clave": "Validación del campo Nationality Code de MRZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "MRZ",
+            "clave": "Validación del campo Issuing State de MRZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "MRZ",
+            "clave": "Validación del campo MRZ Lines de MRZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "MRZ",
+            "clave": "Validación del campo Check digit of document number de MRZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "MRZ",
+            "clave": "Validación del campo Check digit of birth date de MRZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "MRZ",
+            "clave": "Validación del campo Check digit of expiry date de MRZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "MRZ",
+            "clave": "Validación del campo Final check digit de MRZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "MRZ",
+            "clave": "Validación del campo Age de MRZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "Logico",
+            "clave": "Validación del campo Age de MRZ vs VIZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "MRZ",
+            "clave": "Validación del campo Months to expire de MRZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "Logico",
+            "clave": "Validación del campo Months to expire de VIZ",
+            "resultado": "OK"
+          },
+          {
+            "tipo": "Logico",
+            "clave": "Validación del campo Months to expire de MRZ vs VIZ",
+            "resultado": "OK"
+          }
+        ]
+      },
+      "documentIdentification": [
+        {
+          "documentName": "Spain - Id Card (2021) #2 Side B",
+          "country": "Spain",
+          "type": "Identity Card"
+        },
+        {
+          "documentName": "Spain - Id Card (2021) #2",
+          "country": "Spain",
+          "type": "Identity Card"
+        }
+      ],
+      "validacionesTransaccion": [
+        {
+          "tipo": "mrz",
+          "clave": "Validación del campo Personal #",
+          "resultado": "OK"
+        }
+      ],
+      "validacionesGraficas": [
+        {
+          "validacion": "Validación gráfica 0",
+          "graficReference": "",
+          "graficCandidate": "",
+          "score": 71,
+          "result": "NOOK"
+        },
+        {
+          "validacion": "Validación gráfica 1",
+          "graficReference": "",
+          "graficCandidate": "",
+          "score": 66,
+          "result": "NOOK"
+        },
+        {
+          "validacion": "Validación gráfica 2",
+          "graficReference": "",
+          "graficCandidate": "",
+          "score": 95,
+          "result": "OK"
+        }
+      ],
+      "validacionesPersonalizadas": [
+        {
+          "clave": "Caducidad del Documento",
+          "resultado": "OK"
+        },
+        {
+          "clave": "Edad",
+          "resultado": "OK"
+        },
+        {
+          "clave": "Consulta AML",
+          "resultado": "OK"
+        }
+      ],
+      "codError": "00",
+      "descError": "El reconocimiento ocr se ha ejecutado correctamente"
+    },
+    "faceVerification": {
+      "cdgoRespuesta": "00",
+      "descRespuesta": "reconocimiento facial ejecutado correctamente",
+      "result": true,
+      "score": 57,
+      "resultadoPonderado": 81
+    },
+    "signData": "",
+    "statistics": {
+      "tiempoFacial": 355,
+      "tiempoOcrDocumental": 27,
+      "endAsync": 387,
+      "tiempoFacialNfc": 0,
+      "tiempoFacialAntispoofing": 0,
+      "totalScoring": 1,
+      "totalResultadoGlobal": 0
+    },
+    "determination": {
+      "verificado": "OK",
+      "tipo": "",
+      "subtipo": "",
+      "comentarios": ""
+    },
+    "direccion": {
+      "tipoVia": "AVENIDA",
+      "direccion": "AV. TAL",
+      "numero": "20",
+      "codigoPostal": "99999",
+      "localidad": "PUEBLO",
+      "provincia": "ALMERÍA",
+      "comunidadAutonoma": "ANDALUCÍA",
+      "pais": "ESPAÑA",
+      "lat": "37.3518199",
+      "lng": "-2.1953299",
+      "dirFormateada": "AV. TAL, 20, 99999 PUEBLO, ALMERIA, ESPAÑA",
+      "codError": "00",
+      "descError": "No ocurrieron errores, la dirección se analizó correctamente y se devolvió al menos un geocódigo"
+    },
+    "barcode": {},
+    "processing": "2022-04-22 10:56:50.288",
+    "verification": "2022-04-22 10:56:50.292",
+    "listRegistroIps": [
+      {
+        "id": 3246876,
+        "fechaOperacion": 1650617809536,
+        "ip": "1.1.1.1",
+        "tipoOperacion": {
+          "id": 3,
+          "codigo": "UPLOAD",
+          "nombre": "Subida de evidencia",
+          "descripcion": "Llamada que se hace desde el dispositivo del usuario para subir una evidencia sin validación de la evidencia"
+        },
+        "idTransaccion": 3597719
+      },
+      {
+        "id": 3246873,
+        "fechaOperacion": 1650617806677,
+        "ip": "1.1.1.1",
+        "tipoOperacion": {
+          "id": 3,
+          "codigo": "UPLOAD",
+          "nombre": "Subida de evidencia",
+          "descripcion": "Llamada que se hace desde el dispositivo del usuario para subir una evidencia sin validación de la evidencia"
+        },
+        "idTransaccion": 3597719
+      },
+      {
+        "id": 3246869,
+        "fechaOperacion": 1650617784997,
+        "ip": "1.1.1.1",
+        "tipoOperacion": {
+          "id": 4,
+          "codigo": "UPLOAD_AND_CHECK",
+          "nombre": " Subida de evidencia con validación",
+          "descripcion": "Llamada que se hace desde el dispositivo del usuario para subir una evidencia con validación de la evidencia"
+        },
+        "idTransaccion": 3597719
+      },
+      {
+        "id": 3246866,
+        "fechaOperacion": 1650617769585,
+        "ip": "1.1.1.1",
+        "tipoOperacion": {
+          "id": 4,
+          "codigo": "UPLOAD_AND_CHECK",
+          "nombre": " Subida de evidencia con validación",
+          "descripcion": "Llamada que se hace desde el dispositivo del usuario para subir una evidencia con validación de la evidencia"
+        },
+        "idTransaccion": 3597719
+      },
+      {
+        "id": 3246861,
+        "fechaOperacion": 1650617747519,
+        "ip": "1.1.1.1",
+        "tipoOperacion": {
+          "id": 2,
+          "codigo": "NEW_DEVICE",
+          "nombre": "Nuevo disposivo",
+          "descripcion": "Llamada que se hace desde el dispositivo del usuario que realiza el alta para iniciar el proceso"
+        },
+        "idTransaccion": 3597719
+      },
+      {
+        "id": 3246859,
+        "fechaOperacion": 1650617746269,
+        "ip": "193.111.122.201",
+        "tipoOperacion": {
+          "id": 1,
+          "codigo": "NEW_TRANSACTION",
+          "nombre": "Nueva Transaccion",
+          "descripcion": "Llamada desde servidor cliente a nueva transacción"
+        },
+        "idTransaccion": 3597719
+      }
+    ],
+    "ipRepetida": false,
+    "ipRepeticiones": 0
+  }
+}
