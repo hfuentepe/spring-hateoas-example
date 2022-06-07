@@ -1,11 +1,3 @@
-/*
- * Copyright (c) 2022 SELAE All rights reserved.
- * ****************************************************************************************************************
- * "Este componente software es propiedad de SELAE; contiene información confidencial y tanto en su totalidad como
- * parcialmente, no puede ser transferido, reproducido o publicado, bien sea directa o indirectamente, sin la aprobación
- * escrita de SELAE."
- */
-
 package com.example.resthateoas;
 
 import org.springframework.hateoas.RepresentationModel;
